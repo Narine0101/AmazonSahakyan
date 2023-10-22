@@ -22,9 +22,16 @@ loginPageObj.click_to_signin_button()
 navigationBarObj = NavigationBar(driver)
 navigationBarObj.click_to_cart_button()
 
-cartPageObj = CartPage(driver)
-cartPageObj.delete_firstProduct_from_cart()
+# cartPageObj = CartPage(driver)
+# cartPageObj.delete_firstProduct_from_cart()
 
 
-driver.close()
+# driver.close()
 
+navigationBarObj.send_text_to_search_box()
+time.sleep(3)
+# navigationBarObj.click_to_search_button()
+
+navigationBarObj.click_to_nav_search_submit()
+
+time.sleep(5)

@@ -23,7 +23,7 @@ class LoginPage():
         passwordFieldElement.send_keys(password)
 
     def click_to_signin_button(self):
-        sleep(6)
+        sleep(5)
         signInButtonElement = self.driver.find_element(By.ID, "signInSubmit")
         signInButtonElement.click()
         sleep(6)
